@@ -1,4 +1,133 @@
 main {
+  font-family: "Inter", sans-serif;
+  padding: 20px;
+  background-color: #282726;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
-  background-color: aquamarine;
+  max-width: 400px;
+}
+.heading {
+  color: #f9f4da;
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 0;
+}
+.title {
+  color: #8e8e8e;
+  text-align: center;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0;
+  padding-bottom: 10px;
+}
+.game-status {
+  color: #f9f4da;
+  background-color: #7a5ea7;
+  padding: 20px 0px;
+  height: auto;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 16px;
+  letter-spacing: 0;
+  text-align: center;
+  width: 100%;
+}
+.language-list > ul {
+  padding: 10px 0;
+  justify-content: center;
+  color: white;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 350px;
+  gap: 4.5px;
+}
+.HTML {
+  background-color: #e2680f;
+  color: #f9f4da;
+  border-radius: 3px;
+  padding: 5px;
+  font-weight: 700;
+  font-style: bold;
+  font-size: 14px;
+}
+.CSS {
+  background-color: #328af1;
+  color: #f9f4da;
+  border-radius: 3px;
+  padding: 5px;
+  font-weight: 700;
+  font-style: bold;
+  font-size: 14px;
+}
+.Js {
+  background-color: #f4eb13;
+  color: #1e1e1e;
+  border-radius: 3px;
+  padding: 5px;
+  font-weight: 700;
+  font-style: bold;
+  font-size: 14px;
+}
+.React {
+  background-color: #2ed3e9;
+  color: #1e1e1e;
+  border-radius: 3px;
+  padding: 5px;
+  font-weight: 700;
+  font-style: bold;
+  font-size: 14px;
+}
+.Tsx {
+  background-color: #298ec6;
+  color: #f9f4da;
+  border-radius: 3px;
+  padding: 5px;
+  font-weight: 700;
+  font-style: bold;
+  font-size: 14px;
+}
+.Node {
+  background-color: #599137;
+  color: #f9f4da;
+  border-radius: 3px;
+  padding: 5px;
+  font-weight: 700;
+  font-style: bold;
+  font-size: 14px;
+}
+.Py {
+  background-color: #ffd742;
+  color: #1e1e1e;
+  border-radius: 3px;
+  padding: 5px;
+  font-weight: 700;
+  font-style: bold;
+  font-size: 14px;
+}
+.Ruby {
+  background-color: #d02b2b;
+  color: #f9f4da;
+  border-radius: 3px;
+  padding: 5px;
+  font-weight: 700;
+  font-style: bold;
+  font-size: 14px;
+}
+.Ass {
+  background-color: #2d519f;
+  color: #f9f4da;
+  border-radius: 3px;
+  padding: 5px;
+  font-weight: 700;
+  font-style: bold;
+  font-size: 14px;
 }
