@@ -17,7 +17,7 @@ main {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  max-width: 400px;
+  max-width: 600px;
 }
 .heading {
   color: var(--text-primary);
@@ -61,4 +61,24 @@ main {
   padding: 6px;
   font-weight: 700;
   font-size: 0.875rem;
+}
+.word-box {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  justify-content: center;
+  gap: 2px;
+}
+.word-divs {
+  box-sizing: border-box;
+  width: 100%;
+  aspect-ratio: 1;
+  background-color: #323232;
+  color: var(--text-primary);
+  border-bottom: 1px solid var(--text-primary);
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: 0;
+  text-align: center;
+  padding: 14px 8px;
 }
