@@ -1,17 +1,22 @@
+import language from "../data/language";
 export default function LanguageList() {
+  const languages = language.map((lang) => {
+    return (
+      <li
+        style={{
+          backgroundColor: lang.backgroundColor,
+          color: lang.color,
+        }}
+        key={lang.name}
+      >
+        {lang.name}
+      </li>
+    );
+  });
+
   return (
     <section className="language-list">
-      <ul>
-        <li className="HTML">HTML</li>
-        <li className="CSS">CSS</li>
-        <li className="Js">Javascript</li>
-        <li className="React">React</li>
-        <li className="Tsx">Typescript</li>
-        <li className="Node">Node.js</li>
-        <li className="Py">Python</li>
-        <li className="Ruby">Ruby</li>
-        <li className="Ass">Assembly</li>
-      </ul>
+      <ul>{languages}</ul>
     </section>
   );
 }

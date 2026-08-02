@@ -1,10 +1,16 @@
+:root {
+  --bg: #282726;
+  --text-primary: #f9f4da;
+  --text-secondary: #8e8e8e;
+}
 main {
   font-family: "Inter", sans-serif;
   padding: 20px;
-  background-color: #282726;
+  background-color: var(--bg);
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-height: 100vh;
 }
 .header {
   display: flex;
@@ -14,27 +20,26 @@ main {
   max-width: 400px;
 }
 .heading {
-  color: #f9f4da;
+  color: var(--text-primary);
   font-weight: 500;
-  font-size: 20px;
+  font-size: 1.25rem;
   letter-spacing: 0;
 }
 .title {
-  color: #8e8e8e;
+  color: var(--text-secondary);
   text-align: center;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 0.875rem;
   letter-spacing: 0;
   padding-bottom: 10px;
 }
 .game-status {
-  color: #f9f4da;
+  color: var(--text-primary);
   background-color: #7a5ea7;
-  padding: 20px 0px;
-  height: auto;
+  padding: 20px 0;
   font-weight: 400;
   font-style: italic;
-  font-size: 16px;
+  font-size: 1rem;
   letter-spacing: 0;
   text-align: center;
   width: 100%;
@@ -48,86 +53,12 @@ main {
   flex-wrap: wrap;
   width: 100%;
   max-width: 350px;
-  gap: 4.5px;
+  gap: 4px;
 }
-.HTML {
-  background-color: #e2680f;
-  color: #f9f4da;
+
+.language-list li {
   border-radius: 3px;
-  padding: 5px;
+  padding: 6px;
   font-weight: 700;
-  font-style: bold;
-  font-size: 14px;
-}
-.CSS {
-  background-color: #328af1;
-  color: #f9f4da;
-  border-radius: 3px;
-  padding: 5px;
-  font-weight: 700;
-  font-style: bold;
-  font-size: 14px;
-}
-.Js {
-  background-color: #f4eb13;
-  color: #1e1e1e;
-  border-radius: 3px;
-  padding: 5px;
-  font-weight: 700;
-  font-style: bold;
-  font-size: 14px;
-}
-.React {
-  background-color: #2ed3e9;
-  color: #1e1e1e;
-  border-radius: 3px;
-  padding: 5px;
-  font-weight: 700;
-  font-style: bold;
-  font-size: 14px;
-}
-.Tsx {
-  background-color: #298ec6;
-  color: #f9f4da;
-  border-radius: 3px;
-  padding: 5px;
-  font-weight: 700;
-  font-style: bold;
-  font-size: 14px;
-}
-.Node {
-  background-color: #599137;
-  color: #f9f4da;
-  border-radius: 3px;
-  padding: 5px;
-  font-weight: 700;
-  font-style: bold;
-  font-size: 14px;
-}
-.Py {
-  background-color: #ffd742;
-  color: #1e1e1e;
-  border-radius: 3px;
-  padding: 5px;
-  font-weight: 700;
-  font-style: bold;
-  font-size: 14px;
-}
-.Ruby {
-  background-color: #d02b2b;
-  color: #f9f4da;
-  border-radius: 3px;
-  padding: 5px;
-  font-weight: 700;
-  font-style: bold;
-  font-size: 14px;
-}
-.Ass {
-  background-color: #2d519f;
-  color: #f9f4da;
-  border-radius: 3px;
-  padding: 5px;
-  font-weight: 700;
-  font-style: bold;
-  font-size: 14px;
+  font-size: 0.875rem;
 }
