@@ -27,10 +27,16 @@ export default function Main() {
     return random;
   }
   console.log(targetWord);
+  let wrongGuesses = 0;
+  for (let letter of guessedLetters) {
+    if (!targetWord.includes(letter)) {
+      wrongGuesses += 1;
+    }
+  }
   return (
     <main>
-      <Header />
-      <LanguageList />
+      <Header wrongGuesses={wrongGuesses} />
+      <LanguageList wrongGuesses={wrongGuesses} />
       <Word targetWord={targetWord} guessedLetters={guessedLetters} />
       <Keyboard
         typeLetter={typeLetter}

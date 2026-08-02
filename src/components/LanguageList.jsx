@@ -1,8 +1,9 @@
 import language from "../data/language";
-export default function LanguageList() {
-  const languages = language.map((lang) => {
+export default function LanguageList({ wrongGuesses }) {
+  const languages = language.map((lang, ind) => {
     return (
       <li
+        className={ind < wrongGuesses ? "eliminated" : ""}
         style={{
           backgroundColor: lang.backgroundColor,
           color: lang.color,
@@ -10,6 +11,7 @@ export default function LanguageList() {
         key={lang.name}
       >
         {lang.name}
+        {ind < wrongGuesses && <span className="skull">💀</span>}
       </li>
     );
   });

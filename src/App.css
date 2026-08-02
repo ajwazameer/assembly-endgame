@@ -58,10 +58,23 @@ main {
 }
 
 .language-list li {
+  position: relative;
+  /* overflow: hidden; */
   border-radius: 3px;
   padding: 6px;
   font-weight: 700;
   font-size: 0.875rem;
+}
+.skull {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1rem;
+}
+.eliminated {
+  opacity: 0.35;
 }
 .word-box {
   width: 100%;
