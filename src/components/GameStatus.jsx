@@ -1,4 +1,4 @@
-import { successMessages, winMessages, loseMessages } from "../data/messages";
+import { winMessages, loseMessages } from "../data/messages";
 import language from "../data/language";
 export default function GameStatus({
   gameLost,

@@ -1,14 +1,3 @@
-export const successMessages = [
-  "Nice guess! 🚀",
-  "Clean compile! ✅",
-  "Build succeeded! 🎉",
-  "Excellent debugging! 💡",
-  "Bug eliminated! 🐛",
-  "You're on fire! 🔥",
-  "Code looks good! ✨",
-  "Keep it up! 💪",
-];
-
 export const winMessages = [
   "🎉 Victory! You saved the programming world!",
   "🏆 Victory! Assembly has been defeated!",
