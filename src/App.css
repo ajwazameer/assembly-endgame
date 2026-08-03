@@ -43,6 +43,7 @@ main {
   font-size: 1rem;
   letter-spacing: 0;
   text-align: center;
+  max-width: 400px;
   width: 100%;
 }
 .language-list > ul {
@@ -125,6 +126,9 @@ main {
 }
 .default {
   background-color: #fcba29;
+}
+.lost {
+  background-color: #ba2a2a;
 }
 @media (min-width: 947px) {
   .keyboard button {
