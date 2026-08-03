@@ -1,7 +1,10 @@
 import language from "../data/language";
 export default function Header({ wrongGuesses }) {
-  const lang = language[wrongGuesses];
-  const gameStatus = `“Farewell ${lang.name}“`;
+  let gameStatus;
+  if (!(wrongGuesses > 0)) {
+    const lang = language[wrongGuesses];
+    gameStatus = `“Farewell ${lang.name}“`;
+  } else gameStatus = `Hi`;
   return (
     <header className="header">
       <h1 className="heading">Assembly: Endgame</h1>
