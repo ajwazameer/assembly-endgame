@@ -89,7 +89,11 @@ export default function Main() {
         lastGuess={lastGuess}
       />
       <LanguageList wrongGuesses={wrongGuesses} />
-      <Word targetWord={targetWord} guessedLetters={guessedLetters} />
+      <Word
+        targetWord={targetWord}
+        guessedLetters={guessedLetters}
+        gameLost={gameLost}
+      />
       <Keyboard
         gameWon={gameWon}
         gameLost={gameLost}

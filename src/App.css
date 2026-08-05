@@ -141,6 +141,9 @@ main {
   background-color: #559e78;
   border: 2px dashed #323232;
 }
+.result {
+  color: #ba2a2a;
+}
 .new-game {
   width: 100%;
   max-width: 180px;
