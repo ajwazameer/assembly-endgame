@@ -12,9 +12,9 @@ export default function Keyboard({
     let btnClass;
     if (guessedLetters.includes(letter)) {
       if (targetWord.includes(letter)) {
-        btnClass = "correct";
+        btnClass = "correctBtn";
       } else {
-        btnClass = "incorrect";
+        btnClass = "incorrectBtn";
       }
     } else {
       btnClass = "default";

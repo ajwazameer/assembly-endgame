@@ -1,4 +1,4 @@
-import { winMessages, loseMessages } from "../data/messages";
+import { winMessages, loseMessages, farewellMessages } from "../data/messages";
 import language from "../data/language";
 export default function GameStatus({
   gameLost,
@@ -10,18 +10,21 @@ export default function GameStatus({
   let className;
   if (gameWon) {
     gameStatus = winMessages[Math.floor(Math.random() * winMessages.length)];
-    className = "game-status correct";
+    className = "game-status won";
   } else if (gameLost) {
     gameStatus = loseMessages[Math.floor(Math.random() * loseMessages.length)];
     className = "game-status lost";
   } else if (lastGuess.correct === "yes") {
     gameStatus = "Correct Guess! Well done! 🎉";
-    className = "game-status";
+    className = "game-status correct";
   } else if (lastGuess.correct === "no") {
-    gameStatus = `“Farewell ${language[wrongGuesses - 1].name}”`;
-    className = "game-status";
+    const message = farewellMessages[
+      Math.floor(Math.random() * farewellMessages.length)
+    ].replace("{language}", language[wrongGuesses - 1].name);
+    gameStatus = message;
+    className = "game-status initial-incorrect";
   } else {
-    className = "game-status";
+    className = "game-status initial-incorrect";
     gameStatus = "Lesgo! Guess the word to save programming world";
   }
   return <span className={className}>{gameStatus}</span>;
