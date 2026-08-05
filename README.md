@@ -29,7 +29,14 @@ https://hangman-assembly.vercel.app/
 
 ## 📸 Preview
 
-![home-pge](image-1.png)![alt text](image-2.png)![Game-over](image.png)
+<p align="center">
+  <img src="image-1.png" width="260" alt="Start Screen">
+  <img src="image-2.png" width="260" alt="GameWin">
+</p>
+
+<p align="center">
+  <img src="image.png" width="260" alt="Loss Screen">
+</p>
 
 ## 📚 What I Learned While Building This
 
