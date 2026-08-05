@@ -98,7 +98,7 @@ main {
   padding: 8px;
 }
 .keyboard {
-  padding-top: 40px;
+  padding-top: 48px;
   width: 100%;
   max-width: 480px;
   display: flex;
@@ -130,6 +130,20 @@ main {
 .lost {
   background-color: #ba2a2a;
 }
+.new-game {
+  width: 100%;
+  max-width: 180px;
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 0;
+  cursor: pointer;
+  color: #1e1e1e;
+  background-color: #11b5e5;
+  border: 1px solid #d7d7d7;
+  border-radius: 4px;
+  margin-top: 26px;
+  padding: 6px 0;
+}
 @media (min-width: 947px) {
   .keyboard button {
     padding: 14px;
@@ -139,7 +153,7 @@ main {
     padding-bottom: 10px;
   }
   .language-list > ul {
-    padding: 20px 0;
+    padding: 14px 0;
   }
   .word-box {
     gap: 6px;
@@ -150,7 +164,7 @@ main {
     font-size: 1.5rem;
   }
   .keyboard {
-    padding-top: 38px;
+    padding-top: 32px;
   }
   .keyboard button {
     width: 40px;
@@ -158,5 +172,8 @@ main {
     padding: 6px;
     font-weight: 600;
     font-size: 1.2rem;
+  }
+  .new-game {
+    margin-top: 20px;
   }
 }

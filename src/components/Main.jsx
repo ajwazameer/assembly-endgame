@@ -8,6 +8,7 @@ import Keyboard from "./Keyboard";
 import words from "../data/words";
 import GameStatus from "./GameStatus";
 import language from "../data/language";
+import NewGame from "./NewGame";
 
 export default function Main() {
   const [targetWord, setTargetWord] = useState(generateRandomWord);
@@ -64,7 +65,11 @@ export default function Main() {
     return random;
   }
   console.log(targetWord);
-
+  function restartGame() {
+    setGuessedLetters([]);
+    setLastGuess({});
+    setTargetWord(generateRandomWord());
+  }
   return (
     <main>
       {gameWon && (
@@ -92,6 +97,7 @@ export default function Main() {
         guessedLetters={guessedLetters}
         targetWord={targetWord}
       />
+      {(gameLost || gameWon) && <NewGame restartGame={restartGame} />}
     </main>
   );
 }
