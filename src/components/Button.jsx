@@ -4,7 +4,11 @@ export default function Button(props) {
       disabled={props.gameLost || props.gameWon ? true : null}
       onClick={props.typeLetter}
       value={props.letter}
-      className={props.className}
+      className={
+        props.gameLost || props.gameWon
+          ? `${props.className} eliminated`
+          : `${props.className}`
+      }
     >
       {props.letter}
     </button>
