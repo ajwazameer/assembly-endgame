@@ -21,6 +21,7 @@ export default function Keyboard({
     }
     return (
       <Button
+        guessedLetters={guessedLetters}
         gameWon={gameWon}
         gameLost={gameLost}
         className={btnClass}

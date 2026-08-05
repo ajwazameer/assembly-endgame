@@ -58,7 +58,7 @@ export default function Main() {
       correct: mode,
     });
   }
-  console.log(guessedLetters);
+
   function generateRandomWord() {
     const ind = Math.ceil(Math.random() * words.length);
     const random = words[ind];

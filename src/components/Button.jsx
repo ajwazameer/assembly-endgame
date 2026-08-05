@@ -1,7 +1,13 @@
 export default function Button(props) {
   return (
     <button
-      disabled={props.gameLost || props.gameWon ? true : null}
+      disabled={
+        props.gameLost ||
+        props.gameWon ||
+        props.guessedLetters.includes(props.letter)
+          ? true
+          : null
+      }
       onClick={props.typeLetter}
       value={props.letter}
       className={
